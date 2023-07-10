@@ -1,0 +1,80 @@
+.socialbtn {
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: var(--background3-color);
+  color: var(--accent-color);
+}
+
+.socialbtn:hover {
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+  color: var(--text-color);
+}
+img {
+  /* user-select: none;
+  pointer-events: none; */
+}
+
+.bookmarkBtn {
+  width: 11rem;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background3-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+}
+
+.IconContainer {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: .3s;
+  color: var(--text-color);
+}
+
+.text {
+  height: 100%;
+  width: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    color: var(--text-color);
+  z-index: 1;
+  transition-duration: .3s;
+  font-size: 1.04em;
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 40px;
+  background: linear-gradient(to right,var(--primary-color),var(--secondary-color));
+  transition: all 0.3s ease-in-out;
+  color: var(--text-color);
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: .3s;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: .3s;
+}
