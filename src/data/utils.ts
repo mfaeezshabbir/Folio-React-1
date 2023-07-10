@@ -31,7 +31,7 @@ import { HiRocketLaunch } from "react-icons/hi2";
 import {
   BsFillCalendarEventFill,
   BsFillGrid1X2Fill,
-  BsFillPhoneFill,
+  // BsFillPhoneFill,
 } from "react-icons/bs";
 
 export const navLinks = [
@@ -194,7 +194,19 @@ export const knowledgeList = [
   { id: 15, name: "Creativity" },
 ];
 
-export const projectList = [
+interface Project {
+  id: number;
+  title: string;
+  image: string;
+  description: string;
+  category: string;
+  project: string;
+  techUsed: string;
+  repoLink: [string, string];
+  liveLink?: string;
+}
+
+export const projectList:Project[] = [
   {
     id: 1,
     title: "Event Branding",

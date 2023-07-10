@@ -8,9 +8,11 @@ import { FaTimes } from "react-icons/fa";
 import { TbSourceCode } from "react-icons/tb";
 
 interface Project {
+  id: number;
   title: string;
   image: string;
   description: string;
+  category: string;
   project: string;
   techUsed: string;
   repoLink: [string, string];
@@ -69,8 +71,9 @@ const ProjectDetailsPopup: React.FC<ProjectDetailsPopupProps> = ({
             />
           </div>
           <div className="p-6">
-            <p className="text-txt font-normal text-sm whitespace-pre-wrap "
-            dangerouslySetInnerHTML={{ __html: project.description }} 
+            <p
+              className="text-txt font-normal text-sm whitespace-pre-wrap "
+              dangerouslySetInnerHTML={{ __html: project.description }}
             />
             <hr />
             <div className="grid grid-cols-1 lg:grid-cols-2 my-6 text-txt items-center text-lg space-y-3 lg:space-y-">

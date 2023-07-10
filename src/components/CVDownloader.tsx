@@ -5,14 +5,14 @@ function CVDownloadButton() {
 
   return (
     <div className=" flex justify-center items-center w-full p-2 text-white rounded-full mt-6 ">
-      <button className="bookmarkBtn">
-        <a href={cvFilePath} download>
+      <a href={cvFilePath} download>
+        <button className="bookmarkBtn">
           <span className="IconContainer">
             <IoMdCodeDownload className="w-8 h-8" />
           </span>
-        </a>
-        <p className="text whitespace-nowrap">Download CV</p>
-      </button>
+          <p className="text whitespace-nowrap">Download CV</p>
+        </button>
+      </a>
     </div>
   );
 }

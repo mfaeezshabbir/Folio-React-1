@@ -1,6 +1,16 @@
 import React, { useState } from "react";
 import ProjectDetailsPopup from "./ProjectDetailsPopup";
-
+interface Project {
+  id: number;
+  title: string;
+  image: string;
+  description: string;
+  category: string;
+  project: string;
+  techUsed: string;
+  repoLink: [string, string];
+  liveLink?: string;
+}
 interface ProjectCardProps {
   project: Project;
 }

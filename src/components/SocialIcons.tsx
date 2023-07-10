@@ -26,7 +26,8 @@ const SocialMediaIcons: React.FC<SocialMediaIconsProps> = ({
           target="_blank"
           rel="noopener noreferrer"
           className="socialbtn"
-        ><span className="hidden">{socialMedia.icon}</span>
+        >
+          <span className="hidden"></span>
           <socialMedia.icon size={24} />
         </a>
       ))}

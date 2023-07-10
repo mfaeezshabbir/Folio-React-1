@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { techStackData } from "../data/utils";
 
 function TechStack() {
   const [hoveredTech, setHoveredTech] = useState("");
 
-  const handleIconHover = (techName) => {
+  const handleIconHover = (techName: string) => {
     setHoveredTech(techName);
   };
 
