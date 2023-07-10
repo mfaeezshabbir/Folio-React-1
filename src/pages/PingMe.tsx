@@ -6,10 +6,11 @@ import { BsMailbox2, BsPhone } from "react-icons/bs";
 const PingMeScreen: React.FC = () => {
   return (
     <>
-      <div className="space-y-4">
         <Heading head="About Me" />
+      <div className="space-y-4 flex justify-center items-center flex-col">
+        <h1 className="capitalize" >Just Ping Me Any where here</h1>
         <SocialMediaIcons flexDirection="row" startIcons={0} endIcons={99} />
-        <div className="flex justify-around items-center space-x-3">
+        {/* <div className="flex justify-around items-center space-x-3">
           <div className="bg-bg3 p-6 rounded-lg w-1/2">
             <div className="items-center flex spaxe-y-2">
               <BsPhone /> <p className="font-bold">Phone:</p>
@@ -33,7 +34,7 @@ const PingMeScreen: React.FC = () => {
         </div>
         <div>
           <form action="" method="get"></form>
-        </div>
+        </div> */}
       </div>
     </>
   );

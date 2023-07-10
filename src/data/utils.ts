@@ -42,7 +42,7 @@ export const navLinks = [
   { name: "Ping Me", path: "/pingme", icon: FaRegHandshake },
 ];
 export const personalInfoData = [
-  { label: "Phone", value: "+1 123-456-7890", icon: BsFillPhoneFill },
+  // { label: "Phone", value: "+1 123-456-7890", icon: BsFillPhoneFill },
   { label: "Location", value: "Bahawalpur, Pak", icon: IoIosLocate },
   { label: "Email", value: "mfaeezshabbir@gmail.com", icon: SiMinutemailer },
   { label: "Birthday", value: "April 08, 2003", icon: BsFillCalendarEventFill },
@@ -246,28 +246,48 @@ export const projectList = [
   },
   {
     id: 3,
-    title: "Project 3",
-    project: "Website",
-    category: "Data Science",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "GitFi",
+    project: "Web App",
+    category: "Web",
+    description:`<strong>GitHub User Finder</strong>
+      The GbitHub User Finder is a web-based application designed and developed by Muhammad Faeez Shabbir. This application is a powerful tool for discovering GitHub users and exploring their profiles and repositories.
+      
+      With the GitHub User Finder, you can quickly and easily search for GitHub users and explore their profiles and repositories. From discovering new developers to finding potential collaborators, the GitHub User Finder has everything you need to take your GitHub game to the next level.
+      
+      Thanks to its user-friendly interface and powerful search capabilities, the GitHub User Finder is the ultimate tool for exploring the vast world of GitHub. So why wait? Try it out today and discover your next favorite developer!
+      
+      <b>Tech Stack</b>
+      HTML
+      CSS
+      JavaScript
+      GitHub API
+
+      Whether you’re a seasoned GitHub user or just getting started, the GitHub User Finder has something for everyone. So why wait? Try it out today and discover your next favorite developer!
+      `,
     image:
-      "https://raw.githubusercontent.com/mfaeezshabbir/FoliioFaeez/master/public/assets/todoApp.webp?token=GHSAT0AAAAAACE4SILL6PLOE2REIUVTMF26ZFLGBJA",
-    techUsed: "Python, Pandas, Scikit-learn",
-    liveLink: "https://example.com/project3",
-    repoLink: ["GitHub", "https://github.com/example/project1"],
+      "/assets/GitFi.webp",
+    techUsed: "HTML, CSS, JS, GitHub API",
+    liveLink: "https://mfaeezshabbir.github.io/GitFi/",
+    repoLink: ["GitHub", "https://github.com/mfaeezshabbir/GitFi"],
   },
   {
     id: 4,
-    title: "Project 4",
-    project: "Website",
-    category: "UI/UX Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Todo App",
+    project: "Web App",
+    category: "Web",
+    description: `The Todo-App is a web-based application designed and developed by Muhammad Faeez Shabbir. This application is a simple yet powerful tool for managing your to-do list and staying organized.
+
+With its intuitive interface and user-friendly features, the Todo-App allows users to easily:
+    <i>
+    Create, edit, and delete tasks
+    Set due dates and priorities
+    </i>
+      Whether you’re a busy professional or a student with a lot on your plate, the Todo-App can help you stay on track and get things done. Plus, it’s fully customizable, so you can tailor it to your specific needs and preferences.
+      `,
     image:
-      "https://raw.githubusercontent.com/mfaeezshabbir/FoliioFaeez/master/public/assets/GitFi.webp?token=GHSAT0AAAAAACE4SILKYNYSWPAXZE4GBIT2ZFLF7HA",
-    techUsed: "Figma, Adobe XD",
-    liveLink: "https://example.com/project4",
-    repoLink: ["GitHub", "https://github.com/example/project1"],
+      "/assets/todoApp.webp",
+    techUsed: "HTML , CSS, JS",
+    liveLink: "https://mfaeezshabbir.github.io/Todo-App/",
+    repoLink: ["GitHub", "https://github.com/mfaeezshabbir/Todo-App"],
   },
 ];
