@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "../components/Heading";
 import SocialMediaIcons from "../components/SocialIcons";
-import { BsMailbox2, BsPhone } from "react-icons/bs";
+// import { BsMailbox2, BsPhone } from "react-icons/bs";
 
 const PingMeScreen: React.FC = () => {
   return (

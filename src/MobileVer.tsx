@@ -1,4 +1,3 @@
-import DynamicTitle from "./components/DynamicTitle";
 import Home from "./pages/Home";
 import Showcase from "./pages/Showcase";
 import Blogs from "./pages/Blogs";
@@ -10,17 +9,16 @@ function MobileVer() {
   const DynamicPart = (
     <Layout>
       <Routes>
-      <Route path="/" element={<Home Title="My Base" />} />
-        <Route path="/journey" element={<Resume Title="Journey" />} />
-        <Route path="/sorcery" element={<Showcase Title="Sorcery" />} />
-        <Route path="/braindumps" element={<Blogs Title="Dumps" />} />
-        <Route path="/pingme" element={<PingMe Title="Ping Me" />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/journey" element={<Resume />} />
+        <Route path="/sorcery" element={<Showcase />} />
+        <Route path="/braindumps" element={<Blogs />} />
+        <Route path="/pingme" element={<PingMe />} />
       </Routes>
     </Layout>
   );
   return (
     <>
-      <DynamicTitle title={"Home"} />
       <div className="">{DynamicPart}</div>
     </>
   );

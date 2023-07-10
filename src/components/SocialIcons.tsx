@@ -1,8 +1,21 @@
 import { socialMediaLinks } from "../data/utils";
 import "../App.css";
 
-const SocialMediaIcons = ({ flexDirection, startIcons, endIcons }) => {
-  const displayedSocialMediaLinks = socialMediaLinks.slice(startIcons, endIcons);
+interface SocialMediaIconsProps {
+  flexDirection: string;
+  startIcons: number;
+  endIcons: number;
+}
+
+const SocialMediaIcons: React.FC<SocialMediaIconsProps> = ({
+  flexDirection,
+  startIcons,
+  endIcons,
+}) => {
+  const displayedSocialMediaLinks = socialMediaLinks.slice(
+    startIcons,
+    endIcons
+  );
 
   return (
     <div className={`flex flex-${flexDirection} justify-center space-x-3`}>
@@ -13,7 +26,7 @@ const SocialMediaIcons = ({ flexDirection, startIcons, endIcons }) => {
           target="_blank"
           rel="noopener noreferrer"
           className="socialbtn"
-        >
+        ><span className="hidden">{socialMedia.icon}</span>
           <socialMedia.icon size={24} />
         </a>
       ))}

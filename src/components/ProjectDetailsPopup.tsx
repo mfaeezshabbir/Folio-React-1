@@ -6,7 +6,16 @@ import {
 } from "react-icons/ri";
 import { FaTimes } from "react-icons/fa";
 import { TbSourceCode } from "react-icons/tb";
-import Markdown from "markdown-to-jsx";
+
+interface Project {
+  title: string;
+  image: string;
+  description: string;
+  project: string;
+  techUsed: string;
+  repoLink: [string, string];
+  liveLink?: string;
+}
 
 interface ProjectDetailsPopupProps {
   project: Project;
