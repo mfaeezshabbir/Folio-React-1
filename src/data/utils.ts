@@ -2,7 +2,6 @@ export const name = "Muhammad Faeez";
 export const role = "Software Engineer - Graphic Designer";
 export const heroImage = "/assets/Profile-Pic.png";
 
-// Define the mapping of location paths to titles
 export const locationTitleMap: { [key: string]: string } = {
   "/": "My Base",
   "/journey": "Journey",
